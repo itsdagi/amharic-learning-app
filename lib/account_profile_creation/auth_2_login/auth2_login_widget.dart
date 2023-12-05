@@ -99,16 +99,8 @@ class _Auth2LoginWidgetState extends State<Auth2LoginWidget>
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         body: Container(
           height: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                FlutterFlowTheme.of(context).primary,
-                FlutterFlowTheme.of(context).tertiary
-              ],
-              stops: const [0.0, 1.0],
-              begin: const AlignmentDirectional(0.87, -1.0),
-              end: const AlignmentDirectional(-0.87, 1.0),
-            ),
+          decoration: const BoxDecoration(
+            color: Color(0xFF76AD75),
           ),
           alignment: const AlignmentDirectional(0.00, -1.00),
           child: SingleChildScrollView(
@@ -132,14 +124,14 @@ class _Auth2LoginWidgetState extends State<Auth2LoginWidget>
                         Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 12.0, 0.0),
-                          child: Icon(
-                            Icons.flourescent_rounded,
+                          child: FaIcon(
+                            FontAwesomeIcons.grin,
                             color: FlutterFlowTheme.of(context).info,
                             size: 44.0,
                           ),
                         ),
                         Text(
-                          'flow.io',
+                          'Sign in',
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(

@@ -96,7 +96,7 @@ class _Auth2CreateWidgetState extends State<Auth2CreateWidget>
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+        backgroundColor: const Color(0xFF76AD75),
         body: Container(
           width: double.infinity,
           height: double.infinity,
@@ -128,17 +128,17 @@ class _Auth2CreateWidgetState extends State<Auth2CreateWidget>
                       Padding(
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
-                        child: Icon(
-                          Icons.flourescent_rounded,
+                        child: FaIcon(
+                          FontAwesomeIcons.leanpub,
                           color: FlutterFlowTheme.of(context).info,
                           size: 44.0,
                         ),
                       ),
                       Text(
-                        '',
+                        'sign up',
                         style:
                             FlutterFlowTheme.of(context).displaySmall.override(
-                                  fontFamily: 'amharicx',
+                                  fontFamily: 'geez',
                                   color: FlutterFlowTheme.of(context).info,
                                   useGoogleFonts: false,
                                 ),

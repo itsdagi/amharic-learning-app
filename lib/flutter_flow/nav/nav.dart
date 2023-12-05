@@ -92,6 +92,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'auth_2_Login',
           path: '/auth2Login',
           builder: (context, params) => const Auth2LoginWidget(),
+        ),
+        FFRoute(
+          name: 'home',
+          path: '/home',
+          builder: (context, params) => const HomeWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

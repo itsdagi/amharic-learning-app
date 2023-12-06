@@ -97,6 +97,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'home',
           path: '/home',
           builder: (context, params) => const HomeWidget(),
+        ),
+        FFRoute(
+          name: 'fidel',
+          path: '/fidel',
+          builder: (context, params) => const FidelWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

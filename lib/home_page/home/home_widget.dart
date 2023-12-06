@@ -67,7 +67,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                       alignment: const AlignmentDirectional(0.00, 0.00),
                       child: SizedBox(
                         width: double.infinity,
-                        height: 228.0,
+                        height: 300.0,
                         child: CarouselSlider(
                           items: [
                             Align(
@@ -84,7 +84,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(0.00, 1.00),
+                                    alignment: const AlignmentDirectional(0.03, 0.54),
                                     child: FFButtonWidget(
                                       onPressed: () {
                                         print('Button pressed ...');
@@ -115,8 +115,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        const AlignmentDirectional(-0.01, 1.01),
+                                    alignment: const AlignmentDirectional(0.04, 0.54),
                                     child: FaIcon(
                                       FontAwesomeIcons.lock,
                                       color: FlutterFlowTheme.of(context)
@@ -139,7 +138,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: const AlignmentDirectional(0.00, 1.00),
+                                  alignment: const AlignmentDirectional(0.00, 0.55),
                                   child: FFButtonWidget(
                                     onPressed: () {
                                       print('Button pressed ...');
@@ -152,7 +151,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       iconPadding:
                                           const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color: const Color(0xFFAB6E0A),
+                                      color: const Color(0xFF76AD75),
                                       textStyle: FlutterFlowTheme.of(context)
                                           .headlineSmall
                                           .override(
@@ -183,7 +182,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: const AlignmentDirectional(0.00, 1.00),
+                                  alignment: const AlignmentDirectional(0.06, 0.58),
                                   child: FFButtonWidget(
                                     onPressed: () {
                                       print('Button pressed ...');
@@ -213,7 +212,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: const AlignmentDirectional(0.01, 0.98),
+                                  alignment: const AlignmentDirectional(0.07, 0.57),
                                   child: Icon(
                                     Icons.lock,
                                     color: FlutterFlowTheme.of(context)
@@ -235,7 +234,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: const AlignmentDirectional(0.00, 1.00),
+                                  alignment: const AlignmentDirectional(0.06, 0.58),
                                   child: FFButtonWidget(
                                     onPressed: () {
                                       print('Button pressed ...');
@@ -265,7 +264,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: const AlignmentDirectional(-0.03, 0.99),
+                                  alignment: const AlignmentDirectional(0.06, 0.57),
                                   child: Icon(
                                     Icons.lock,
                                     color: FlutterFlowTheme.of(context)
@@ -297,16 +296,40 @@ class _HomeWidgetState extends State<HomeWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.92, -1.05),
+                alignment: const AlignmentDirectional(0.88, -0.94),
                 child: Container(
-                  width: 75.0,
-                  height: 75.0,
+                  width: 80.0,
+                  height: 80.0,
                   clipBehavior: Clip.antiAlias,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
                   child: Image.network(
                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/abc-learning-yoamr5/assets/e196k8vw6h3n/Untitled_design(1).jpg',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Align(
+                alignment: const AlignmentDirectional(-0.86, 0.91),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Image.network(
+                    'https://picsum.photos/seed/565/600',
+                    width: 174.0,
+                    height: 246.0,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Align(
+                alignment: const AlignmentDirectional(0.71, 0.92),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Image.network(
+                    'https://picsum.photos/seed/105/600',
+                    width: 170.0,
+                    height: 262.0,
                     fit: BoxFit.cover,
                   ),
                 ),
